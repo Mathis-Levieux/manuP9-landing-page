@@ -1,0 +1,48 @@
+
+/*************************************************CSS DAVID *****************************************************************************/
+main h3{
+    margin-bottom: 2em;
+}
+.title {
+    height: 100vh;
+}
+.title img {
+    width: 100%;
+    height: 100vh;
+}
+.program {
+margin: 4em auto;
+}
+.description {
+    font-size: 1.2em;
+    margin: auto;
+    ;
+}
+.icon-language {
+    height: 3em;
+    width: 3em;
+}
+.picture-dev {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.language {
+    margin-top: 5em;
+}
+
+@media (max-width:768px) {
+    .title {
+        height: auto;
+    }
+    .title img {
+        height: 50vh;
+    }
+    .program {
+        margin: 0 auto;
+        font-size: 1em;
+    }
+  
+    
+}
+/**********************************************************************************************************************************************/
