@@ -1,8 +1,8 @@
-
 /* CSS DAVID */
-main h3{
+main h3 {
     margin-bottom: 2em;
 }
+
 /* .title {
     height: 100vh;
 } */
@@ -11,33 +11,40 @@ main h3{
     height: 100vh;
 } */
 .program {
-margin: 2em auto;
+    margin: 2em auto;
 }
-.program h3{
+
+.program h3 {
     margin-bottom: 1em;
 }
+
 .description {
     font-size: 1.2em;
     margin: auto;
     ;
 }
+
 .icon-language {
     height: 3em;
     width: 3em;
 }
+
 .picture-dev {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 .picture-dev1 {
-    object-fit:cover ;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.picture-dev{
+
+.picture-dev3 {
     display: none;
 }
+
 .language {
     margin-top: 5em;
 }
@@ -46,6 +53,7 @@ margin: 2em auto;
     .title {
         height: auto;
     }
+
     /* .title img {
         height: 50vh;
     } */
@@ -53,21 +61,29 @@ margin: 2em auto;
         margin: 0 auto;
         font-size: 1em;
     }
+
     main h3 {
-        margin:1em auto;
+        margin: 1em auto;
     }
+
     .language {
         margin: 1em auto;
     }
-    @media (max-width:1024px){
+
+    @media (max-width:1024px) {
         .picture-dev1 {
             display: none;
         }
-        .picture-dev{
-       display: block;
+
+        .picture-dev3 {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
+
     }
-    
+
 }
 
 
