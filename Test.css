@@ -27,6 +27,7 @@ input[type=radio] {
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
 .cards {
@@ -84,7 +85,7 @@ input[type=radio] {
 }
 
 .aqua-gradient {
-  background: linear-gradient(40deg, #508fee, #c967f6) !important;
+  background: linear-gradient(50deg, #508fee, #c967f6) !important;
 }
 
 .testimonial-card .avatar {
