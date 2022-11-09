@@ -385,3 +385,26 @@ header {
     height: 25px;
     width: 25px;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/image-Accueil.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}

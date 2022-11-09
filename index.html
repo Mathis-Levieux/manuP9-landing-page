@@ -9,6 +9,8 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Promo 9 - La Manu</title>
 </head>
 
@@ -65,7 +67,6 @@
   </header>
 
   <main>
-
     <div id="ecole" class="row m-0 d-flex justify-content-center border border-dark">
 
       <div class="col-lg-8 h4 mt-lg-3">Une implantation dans un superbe bâtiment Art deco en plein centre-ville du Havre
@@ -279,11 +280,6 @@
 
 
 
-
-
-
-
-
     <!-- TRAVAIL DAVID -->
     <div class="row mx-0">
       <div class="title col-lg-6 mx-0 p-0">
@@ -312,7 +308,7 @@
         </p>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos-duration="1000" data-aos="fade-down-right" data-aos-anchor-placement="center-bottom">
         <h3 class="text-center display-5"> <i class="bi bi-1-circle"></i> Développement Front-end</h3>
         <p class="description col-lg-6">
           Apprentissage des langages front-end (HTML, CSS, JS) Maitrise du
@@ -322,15 +318,15 @@
         </p>
       </div>
 
-      <div class="col-lg-6 mx-0 p-0">
+      <div data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="col-lg-6 mx-0 p-0">
         <img class="picture-dev" src="assets/img/front-end.jpg" alt="illustration" />
       </div>
 
-      <div class="col-lg-6 mx-0 p-0">
+      <div class="col-lg-6 mx-0 p-0" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos="fade-up-right">
         <img class="picture-dev" src="assets/img/back-end.jpg" alt="illustration" />
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos="fade-up-left">
         <h3 class="text-center display-5"> <i class="bi bi-2-circle"></i> Développement Back-end</h3>
         <p class="description col-lg-6">
           Apprentissage du langage PHP Conception et mise en œuvre d’une base de
@@ -339,46 +335,46 @@
         </p>
       </div>
 
-      <div class="language col-lg-8 mx-auto">
-        <h3 class="text-center display-5">
+      <div class="language col-lg-8 mx-auto ">
+        <h3 class="text-center display-5" data-aos="zoom-in">
           Principaux outils et langages étudiés
         </h3>
-        <div class="row text-center">
+        <div class="row text-center" data-aos="zoom-in" data-aos-delay="300">
           <div class="col-4">
             <img class="icon-language" src="assets/img/icones/html-5.png" alt="logo html" />
             <p>HTML</p>
           </div>
 
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="500">
             <img class="icon-language" src="assets/img/icones/css-3.png" alt="logo Css" />
             <p>CSS</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="700">
             <img class="icon-language" src="assets/img/icones/js.png" alt="logo javascript" />
             <p>Javascript</p>
           </div>
 
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="900">
             <img class="icon-language" src="assets/img/icones/bootstrap.png" alt="logo bootstrap" />
             <p>Bootstrap</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="1100">
             <img class="icon-language" src="assets/img/icones/mysql.png" alt="logo my SQL" />
             <p>My SQL</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="1300">
             <img class="icon-language" src="assets/img/icones/php.png" alt="logo de PHP" />
             <p>PHP</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="1500">
             <img class="icon-language" src="assets/img/icones/wordpress-logo.png" alt="logo Wordpress" />
             <p>Wordpress</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="1700">
             <img class="icon-language" src="assets/img/icones/vsCode.png" alt="logo VS code" />
             <p>VS Code</p>
           </div>
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in" data-aos-delay="1900">
             <img class="icon-language" src="assets/img/icones/symfony.png" alt="logo Symfony" />
             <p>Symfony</p>
           </div>
@@ -674,8 +670,8 @@
           width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade" class="col-sm-3 p-2"></iframe>
         <div class="col-sm-2 gx-1">
-          <div class="col-sm-12 pt-1">10 Place Léon Meyer, 76600 Le Havre</div>
-          <div class="col-sm-12 pt-1">09 86 27 17 04</div>
+          <div class="col-sm-12 pt-5"><p>10 Place Léon Meyer 76600 Le Havre</p></div>
+          <div class="col-sm-12 pt-1"><p>09 86 27 17 04</p></div>
           <div class="col-sm-12 pt-1 ">
             <a href="mailto:contact@lamanu.fr">contact@lamanu.fr</a>
           </div>
@@ -713,6 +709,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
