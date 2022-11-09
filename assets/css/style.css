@@ -60,6 +60,7 @@ main h3 {
     margin-top: 5em;
 }
 
+
 @media (max-width:768px) {
     .title {
         height: auto;
@@ -130,32 +131,76 @@ main h3 {
 
 /* CSS THOMAS */
 
-
-
 header {
     height: 20vh;
 }
 
-.header_bar {
-    height: 20vh;
-}
-
 .logo {
-    height: 25vh;
+    height: 22vh;
 }
 
 #ecole {
-    /* height: 80vh; */
-    width: auto;
+    height: 80vh;
 }
+
+.thegrid  {
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 3fr 2fr 5fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas:
+    "first first batiment"
+    "gare logo_rectangle batiment"
+    "gare second second";
+    gap: 0.5rem;
+    }
+
+    .first_text {
+        grid-area: first;
+    }
+    
+    .second_text {
+        grid-area: second;
+    }
+    
+    .batiment {
+        grid-area: batiment;
+    }
+    
+    .logo_rectangle {
+        grid-area: logo_rectangle;
+    }
+    
+    .gare {
+        grid-area: gare ;
+    }
+
+    .thegrid img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 
 @media screen and (max-width :991px) {
-    .navbar-nav {
-        margin-left: 10px;
+
+    #ecole {
+        width: auto;
+        height: auto;
     }
+
+    .thegrid  {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 50% 5% 45%;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-areas:
+        "first first batiment"
+        "logo_rectangle logo_rectangle batiment"
+        "second second second";
+           gap: 0.5rem;
+        }
+
 }
-
-
 
 
 
@@ -403,25 +448,57 @@ header {
     width: 25px;
 }
 
-.parallax {
+.parallax1 {
     /* The image used */
-    background-image: url("../img/image-Accueil.jpg");
+    background-image: url("../img/background1.jpg");
   
     /* Set a specific height */
-    min-height: 300px;
+    min-height: 300px; 
+    width: 100%;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("../img/background2.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url("../img/background3.jpg");
+  
+    /* Set a specific height */
+    min-height: 100px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 body {
     overflow-x: hidden;
 }
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
+@media screen and (max-width: 650px) {
+    .parallax1, .parallax2, .parallax3 {
       background-attachment: scroll;
+    }
+    .cards {
+        height: 60vh!important;
     }
 }
