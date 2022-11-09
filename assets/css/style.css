@@ -85,7 +85,28 @@ margin: 2em auto;
 
 
 
+header {
+    height: 20vh;
+}
 
+.header_bar {
+    height: 20vh;
+}
+
+.logo {
+    height: 25vh;
+}
+
+#ecole {
+    height: 80vh;
+    width: auto;
+}
+
+@media screen and (max-width :991px) {
+    .navbar-nav {
+        margin-left: 10px;
+    }
+}
 
 
 
