@@ -204,6 +204,12 @@ header {
 
 }
 
+@media screen and (max-height: 700px) {
+    .cards {
+        height: 85vh !important;
+    }
+}
+
 
 /* CSS MATHIS */
 
@@ -281,9 +287,6 @@ body {
 @media screen and (max-width: 650px) {
     .parallax1, .parallax2, .parallax3 {
       background-attachment: scroll;
-    }
-    .cards {
-        height: 60vh!important;
     }
 
     .arrowup {
