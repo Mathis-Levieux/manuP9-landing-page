@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 html, body {
     font-family: 'Roboto', sans-serif;
 
+}
+
+main {
+    overflow-x: hidden;
 }
 
 p {
@@ -16,13 +23,12 @@ main h3 {
 }
 
 
-/* .title {
-    height: 100vh;
-} */
-/* .title img {
-    width: 100%;
-    height: 100vh;
-} */
+.title h2 {
+    padding-top: 5em;
+}
+.title h3 {
+    padding-top: 1em;
+}
 
 .program {
     margin: 2em auto;
@@ -67,6 +73,11 @@ main h3 {
     margin-top: 5em;
 }
 
+.icon-language {
+    height: 5em;
+    width: 5em;
+    margin: 1em;
+}
 
 @media (max-width:768px) {
     .title {
@@ -89,69 +100,54 @@ main h3 {
         margin: 1em auto;
     }
 
-    @media (max-width:1024px) {
-        .picture-dev1 {
-            display: none;
-        }
-
-        .picture-dev3 {
-            display: block;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-        .description {
-            width: auto;
-            margin-bottom: 1em;
-            font-size: 1em;
-        }
-
+    .icon-language {
+        height: 3em;
+        width: 3em;
+        margin: 0;
     }
 
 }
 
+@media (max-width:1024px) {
+    .picture-dev1 {
+        display: none;
+    }
 
+    .picture-dev3 {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .description {
+        width: auto;
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
 
+    .title h2 {
+        padding: 0;
+    }
+    .title h3 {
+        padding: 0;
+    }
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* CSS THOMAS */
 
 header {
-    height: 20vh;
+    background: linear-gradient(50deg, #508fee, #c967f6)
 }
 
-.logo {
-    height: 22vh;
-}
-
-#ecole {
-    height: 80vh;
+.logo  {
+    object-fit: contain;
+    height: 10rem ;
 }
 
 .thegrid  {
-    height: 70vh;
     display: grid;
     grid-template-rows: 3fr 2fr 5fr;
     grid-template-columns: 2fr 1fr 2fr;
@@ -165,282 +161,48 @@ header {
     .first_text {
         grid-area: first;
     }
-    
+
     .second_text {
         grid-area: second;
     }
-    
+
     .batiment {
         grid-area: batiment;
     }
-    
+
     .logo_rectangle {
         grid-area: logo_rectangle;
     }
-    
+
     .gare {
         grid-area: gare ;
     }
 
     .thegrid img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-family: 'Bebas Neue', cursive !important;
+        letter-spacing: 0.20rem;
+        font-size: 5rem !important;
+
     }
 
 @media screen and (max-width :991px) {
 
-    #ecole {
-        width: auto;
-        height: auto;
-    }
-
     .thegrid  {
-        height: 100%;
-        display: grid;
-        grid-template-rows: 50% 5% 45%;
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-areas:
-        "first first batiment"
-        "logo_rectangle logo_rectangle batiment"
-        "second second second";
-           gap: 0.5rem;
+        display: block;
+        margin-bottom: 3rem ;
+        }
+
+        h1 {
+            font-size: 1.5rem !important;
         }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CSS MARIE SO */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CSS MATHIS */
@@ -451,8 +213,22 @@ header {
 }
 
 .logofooter {
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: auto;
+}
+
+.arrowup {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
+}
+
+.arrowup:hover {
+    color: black;
+}
+footer {
+    position: relative;
 }
 
 .parallax1 {
@@ -475,13 +251,14 @@ header {
     background-image: url("../img/background2.jpg");
   
     /* Set a specific height */
-    min-height: 300px; 
+    min-height: 500px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 100px;
   }
 
   .parallax3 {
@@ -507,5 +284,12 @@ body {
     }
     .cards {
         height: 60vh!important;
+    }
+
+    .arrowup {
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        color: white;
     }
 }
